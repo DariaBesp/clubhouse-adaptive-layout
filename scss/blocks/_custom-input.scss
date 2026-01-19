@@ -1,0 +1,48 @@
+.custom-input {
+  position: relative;
+  $root: &;
+
+  &--error &__field {
+    border-color: $color-orange-red;
+    background-color: rgba($color-orange-red, 0.05);
+  }
+
+  &--error &__error-text {
+    display: block;
+  }
+
+  &__error-text {
+    display: none;
+    color: $color-orange-red;
+    position: absolute;
+    left: 11px;
+    bottom: -23px;
+    font-style: italic;
+
+    @include vp-767 {
+      bottom: -19px;
+      font-size: 12px;
+    }
+  }
+
+  &__field {
+    border: 1px solid transparent;
+    background-color: rgba($color-jaguar, 0.05);
+    border-radius: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+
+    &::placeholder {
+      color: rgba($color-jaguar, 0.3);
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      border-color: $color-jaguar;
+    }
+  }
+}
