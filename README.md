@@ -13,7 +13,7 @@ git clone https://github.com/DariaBesp/clubhouse-adaptive-layout.git
 ```
 2. Перейти в папку проекта
 ```bash
-cd gazprom-adaptive-layout
+cd clubhouse-adaptive-layout
 ```
 
 3. Запустить локально:
